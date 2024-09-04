@@ -1,0 +1,36 @@
+2022-08-20 23:23:10,118 - numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2022-08-20 23:23:10,118 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2022-08-20 23:23:10,385 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 1.49618, 'c2': 1.49618, 'w': 0.7298}
+2022-08-20 23:30:41,365 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 477.5123822747541, best pos: [ 5.24691353  5.02021878 21.83308352 32.91089833]
+2022-08-21 00:02:37,748 - numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2022-08-21 00:02:37,748 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2022-08-21 00:02:39,423 - pyswarms.single.global_best - INFO - Optimize for 2 iters with {'c1': 1.49618, 'c2': 1.49618, 'w': 0.7298}
+2022-08-21 00:02:43,963 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 581.0431160004955, best pos: [ 6.7256214   6.22271438 21.50275238 30.93095691]
+2022-08-21 00:02:53,669 - numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2022-08-21 00:02:53,669 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2022-08-21 00:02:54,318 - pyswarms.single.global_best - INFO - Optimize for 2 iters with {'c1': 1.49618, 'c2': 1.49618, 'w': 0.7298}
+2022-08-21 00:02:58,865 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 559.8143317795071, best pos: [ 5.0243867   7.56412639 21.7652833  33.11706697]
+2022-08-21 00:05:03,785 - numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2022-08-21 00:05:03,785 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2022-08-21 00:05:04,452 - pyswarms.single.global_best - INFO - Optimize for 10 iters with {'c1': 1.49618, 'c2': 1.49618, 'w': 0.7298}
+2022-08-21 00:05:25,814 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 517.2277570457433, best pos: [ 5.59163678  5.05798758 22.28193576 33.0644279 ]
+2022-08-21 00:08:33,943 - numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2022-08-21 00:08:33,943 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2022-08-21 00:08:34,600 - pyswarms.single.global_best - INFO - Optimize for 1 iters with {'c1': 1.49618, 'c2': 1.49618, 'w': 0.7298}
+2022-08-21 00:08:36,653 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 611.971200795967, best pos: [ 6.60292153  6.82772554 21.39309675 32.7703377 ]
+2022-08-21 00:12:48,136 - numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2022-08-21 00:12:48,136 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2022-08-21 00:12:48,401 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 1.49618, 'c2': 1.49618, 'w': 0.7298}
+2022-08-21 00:20:02,736 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 474.39047101557617, best pos: [ 5.10005324  5.48652333 21.05432207 33.66865203]
+2022-08-21 01:20:58,302 - numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2022-08-21 01:20:58,302 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2022-08-21 01:20:58,561 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 1.49618, 'c2': 1.49618, 'w': 0.7298}
+2022-08-21 01:28:09,802 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 476.21551928853904, best pos: [ 5.0706374   5.20409107 21.44840855 33.99100152]
+2022-08-21 01:29:24,138 - numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2022-08-21 01:29:24,138 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2022-08-21 01:29:24,400 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 1.49618, 'c2': 1.49618, 'w': 0.7298}
+2022-08-21 01:36:54,831 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 470.5049186448609, best pos: [ 5.12538121  5.00777656 21.59271235 33.5229163 ]
+2022-08-21 01:52:43,102 - numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2022-08-21 01:52:43,102 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2022-08-21 01:52:43,367 - pyswarms.single.global_best - INFO - Optimize for 600 iters with {'c1': 1.49618, 'c2': 1.49618, 'w': 0.7298}
+2022-08-21 02:15:01,841 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 471.82224276314577, best pos: [ 5.03155969  5.59042444 21.07529905 33.38504851]

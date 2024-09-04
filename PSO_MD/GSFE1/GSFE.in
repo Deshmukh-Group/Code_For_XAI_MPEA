@@ -1,0 +1,74 @@
+# Input file for Stack Fault Energy surface of Nickel
+# Richard Glaze, 2014
+# --------------------- INITIALIZAITION ---------------------
+clear
+units		metal
+dimension	3
+boundary	p p s
+atom_style	atomic
+
+read_data 	../data111_use1.dat
+#variable x_displace equal -1*(${latparam1}/sqrt(6))
+variable zcut equal 17.4363
+variable xdim equal 43.5152
+variable ydim equal 25.1235
+
+# --------------------- ATOM DEFINITION ---------------------
+
+region		1 block -.001 INF -.001 INF -.001 ${zcut} units box
+region 	2 block -.001 INF -.001 INF ${zcut} INF units box
+
+region		whole block INF INF INF INF INF INF units box
+
+
+# --------------------- FORCE FIELDS ---------------------
+pair_style	eam/alloy
+pair_coeff	* * ../FeNiCrCoCu_2018.eam Cu Cr Co Fe Ni
+
+# --------------------- SETTINGS ---------------------
+
+compute peratom all pe/atom
+compute eatoms all reduce sum c_peratom
+compute csym all centro/atom fcc
+
+min_style cg
+minimize 1e-10 1e-10 10000 100000
+
+thermo 1
+thermo_style custom step pe c_eatoms
+#dump 1 all custom 1 dump.relax id type xs ys zs c_peratom c_csym
+run 0
+
+#this command creates a model of the script before the displacement and minimization occur
+
+
+variable E equal "c_eatoms"
+variable Eo equal $E
+
+#undump 1
+
+#variable E equal "c_eatoms" computes the initial energy of the model before any sliding is done
+#E is necessary to store the initial energy in Eo
+
+group bot region 1
+group top region 2
+
+
+reset_timestep 0
+timestep 1
+
+fix 1 top move linear -0.01 0.0 0.0 units box
+
+#dump 2 all custom 1 dump2.relax id type xs ys zs c_peratom c_csym
+
+#displace_atoms top move ${x_displace} 0.0 0.0 units box
+#displace_atoms is the command neccessary to move atoms into the next stacking arrangement (ie: A -> B)
+
+#fix 2 all setforce 0 0 NULL
+
+
+thermo 1
+thermo_style custom step pe ke c_eatoms 
+
+run 500
+

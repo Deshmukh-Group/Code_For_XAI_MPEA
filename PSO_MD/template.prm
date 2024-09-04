@@ -1,0 +1,14 @@
+#!/bin/bash
+
+python HEA.py ${w1} ${w2} ${w3} ${w4}
+mv data100_use.dat data100_use1.dat
+python HEA.py ${w1} ${w2} ${w3} ${w4}
+mv data100_use.dat data100_use2.dat
+python HEA.py ${w1} ${w2} ${w3} ${w4}
+mv data100_use.dat data100_use3.dat
+python HEA111.py ${w1} ${w2} ${w3} ${w4}
+mv data111_use.dat data111_use1.dat
+python HEA111.py ${w1} ${w2} ${w3} ${w4}
+mv data111_use.dat data111_use2.dat
+python HEA111.py ${w1} ${w2} ${w3} ${w4}
+mv data111_use.dat data111_use3.dat
